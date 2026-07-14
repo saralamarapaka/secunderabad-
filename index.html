@@ -1,1 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>HYDERABAD DISTRICT - SECUNDERABAD MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>HYDERABAD DISTRICT</h1>
+<h2>SECUNDERABAD MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+
+<!-- 1 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚉</div>
+
+<div class="info">
+<h3>Secunderabad Railway Station</h3>
+<p>Railway Station</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43399,78.50157"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 2 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚇</div>
+
+<div class="info">
+<h3>Secunderabad East Metro Station</h3>
+<p>Metro Station</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43597,78.50541"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 3 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚇</div>
+
+<div class="info">
+<h3>Parade Ground Metro Station</h3>
+<p>Metro Station</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44415,78.49724"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 4 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚌</div>
+
+<div class="info">
+<h3>Jubilee Bus Station (JBS)</h3>
+<p>Bus Station</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44781,78.49800"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 5 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏥</div>
+
+<div class="info">
+<h3>Gandhi Hospital</h3>
+<p>Hospital</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.42809,78.50145"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 6 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+
+<div class="info">
+<h3>St. Ann's High School, Secunderabad</h3>
+<p>School</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44555,78.50373"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 7 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">⛪</div>
+
+<div class="info">
+<h3>St. Mary's Basilica</h3>
+<p>Church</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44216,78.50292"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 8 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+
+<div class="info">
+<h3>Ujjaini Mahakali Temple</h3>
+<p>Temple</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43698,78.49107"
+target="_blank">
+Open Map
+</a>
+
+</div>
+  <!-- 9 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">⛪</div>
+
+<div class="info">
+<h3>Wesley Church</h3>
+<p>Church</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44020,78.49926"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 10 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🕰️</div>
+
+<div class="info">
+<h3>Secunderabad Clock Tower</h3>
+<p>Landmark</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44134,78.49866"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 11 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛣️</div>
+
+<div class="info">
+<h3>Sardar Patel Road</h3>
+<p>Road</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44386,78.48271"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 12 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚦</div>
+
+<div class="info">
+<h3>Paradise Circle</h3>
+<p>Junction</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44343,78.48845"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 13 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+
+<div class="info">
+<h3>Paradise Restaurant</h3>
+<p>Restaurant</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44184,78.48721"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 14 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚦</div>
+
+<div class="info">
+<h3>Patny Centre</h3>
+<p>Junction</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44198,78.49593"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 15 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🎬</div>
+
+<div class="info">
+<h3>Tivoli Cinema</h3>
+<p>Cinema</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44864,78.49308"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 16 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏨</div>
+
+<div class="info">
+<h3>Alpha Hotel</h3>
+<p>Hotel</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43597,78.50066"
+target="_blank">
+Open Map
+</a>
+
+</div>
+  <!-- 17 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛣️</div>
+
+<div class="info">
+<h3>James Street</h3>
+<p>Road</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43497,78.48481"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 18 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏅</div>
+
+<div class="info">
+<h3>YMCA Secunderabad</h3>
+<p>Sports Club</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44280,78.49877"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 19 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+
+<div class="info">
+<h3>Keys High School</h3>
+<p>School</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43913,78.50390"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 20 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛍️</div>
+
+<div class="info">
+<h3>Regimental Bazaar</h3>
+<p>Market</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.48159,78.50406"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 21 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">👮</div>
+
+<div class="info">
+<h3>Mahankali Police Station</h3>
+<p>Police Station</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43642,78.49179"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 22 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛍️</div>
+
+<div class="info">
+<h3>General Bazaar</h3>
+<p>Market</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43774,78.49033"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 23 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">📖</div>
+
+<div class="info">
+<h3>Bible House</h3>
+<p>Religious Centre</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43090,78.49476"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 24 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">⛪</div>
+
+<div class="info">
+<h3>St. John's Church</h3>
+<p>Church</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.44284,78.50733"
+target="_blank">
+Open Map
+</a>
+
+</div>
+  <!-- 25 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛣️</div>
+
+<div class="info">
+<h3>Rashtrapati Road</h3>
+<p>Road</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=17.43556,78.49427"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Hyderabad District - Secunderabad Mandal</p>
+<p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+
+function searchPlaces() {
+
+let input = document.getElementById("search").value.toLowerCase();
+
+let places = document.getElementsByClassName("place");
+
+for (let i = 0; i < places.length; i++) {
+
+let text = places[i].innerText.toLowerCase();
+
+if (text.indexOf(input) > -1) {
+places[i].style.display = "flex";
+} else {
+places[i].style.display = "none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
